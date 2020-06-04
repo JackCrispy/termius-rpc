@@ -7,11 +7,9 @@
 3. `npm run termius`
 
 ## How to run 24/7 in background
-
-1. Install pm2
-2. Run `pm2 start termius/main.js`
-3. Done!
-
+  
+- No current way. Just leave the CMD open. :/
+  
 ## Notes
 
 It will auto update every 5 seconds.
