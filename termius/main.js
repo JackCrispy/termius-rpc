@@ -3,8 +3,6 @@
 /* eslint-disable no-console */
 
 const DiscordRPC = require('../src');
-const exec = require('child_process').exec;
-
 const clientId = '700889110440837220';
 
 DiscordRPC.register(clientId);
@@ -28,7 +26,8 @@ rpc.on('ready', async() => {
     tasks = tasks.filter(task => task.name == "Termius.exe");
 
     let processWindows = require("node-process-windows");
- 
+    setActivity((tasks.length > 0), startTimestamp, 'Working on it...');
+
     processWindows.getProcesses(function(err, processes) {
         processes.forEach(fill => {
           if (fill.processName == "Termius") {
@@ -40,6 +39,7 @@ rpc.on('ready', async() => {
   }, 5e3);
 
   async function setActivity(isRunning, startTimestamp, title) {
+    console.log(isRunning)
     if (!rpc) {
       return;
     }
