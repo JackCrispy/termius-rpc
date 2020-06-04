@@ -39,7 +39,6 @@ rpc.on('ready', async() => {
   }, 5e3);
 
   async function setActivity(isRunning, startTimestamp, title) {
-    console.log(isRunning)
     if (!rpc) {
       return;
     }
