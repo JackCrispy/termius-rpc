@@ -21,3 +21,6 @@
 ## Notes
 
 It will auto update every 5 seconds.
+
+## Credits
+Thanks to TheeSniper95 for helping fix some issues!
