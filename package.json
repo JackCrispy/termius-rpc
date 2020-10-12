@@ -12,7 +12,7 @@
     "termius": "nodemon termius/main.js"
   },
   "dependencies": {
-    "node-fetch": "2.6.0",
+    "node-fetch": "2.6.1",
     "node-process-windows": "0.0.2",
     "nodemon": "^2.0.4",
     "process-list": "^2.0.0",
